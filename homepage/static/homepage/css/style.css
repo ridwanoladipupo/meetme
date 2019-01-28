@@ -1,0 +1,35 @@
+.navbar-text{
+    font-size: 16px;
+    color: #000000
+}
+
+.navbar-text a:hover{
+    text-decoration: none;
+    
+}
+
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+.img-fluid{
+    max-width: 100%;
+    max-height: 600px;
+}
+.container-fluid{
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navbar-brand img{
+    max-height: 40px;
+}
+.jumbotron {
+    background-color: whitesmoke;
+}
