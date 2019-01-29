@@ -16,7 +16,7 @@
     max-width: 100%;
     max-height: 600px;
 }
-.container-fluid{
+.cont-fluid{
     position: relative;
     text-align: center;
     color: whitesmoke;
@@ -33,3 +33,4 @@
 .jumbotron {
     background-color: whitesmoke;
 }
+

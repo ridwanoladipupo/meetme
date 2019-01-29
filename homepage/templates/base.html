@@ -12,8 +12,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'homepage/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/css/main.css' %}">
 
-    <title>meetme</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   
+    <title>Meetme | Techcodify</title>
+    <link rel="icon" type="image/ico" href="{% static 'homepage/images/meetme.png' %}" type="text/css">
   </head>
   <body>
 
@@ -26,7 +31,7 @@
     </nav>
 
     <section>
-        <div class="container-fluid no-padding">
+        <div class="container-fluid cont-fluid no-padding">
             <div class="row">
                 <div class="col-md-12">
                     <img class="img-fluid w-100" src="{% static 'homepage/images/rawpixel5.jpg' %}">
@@ -51,11 +56,11 @@
 
     <section>
         <div class="container">
-            <h4 class="pt-5 pb-5">Meet my mentees</h4>
+            <h4 class="pt-5 pb-5 mt-5">Meet my mentees</h4>
 
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="10000">
+                    <div class="carousel-item active" data-interval="20000">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
@@ -89,7 +94,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-interval="10000">
+                    <div class="carousel-item" data-interval="20000">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
@@ -138,6 +143,176 @@
         </div>
     </section>
 
+    <section>
+        <div class="container mt-5 pb-5">
+            <h4 class="pt-5 pb-5 mt-5">Meet the Giants on whom I rely</h4>
+
+            <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active" data-interval="20000">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="{% static 'homepage/images/rawpixel.jpg' %}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Dr. Olusola Ajayi</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="{% static 'homepage/images/rawpixel2.jpg' %}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Mr. Olakunle Figboyegun</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="{% static 'homepage/images/rawpixel3.jpg' %}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Engr. Ahmed Atere</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="20000">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="{% static 'homepage/images/rawpixel.jpg' %}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Mr. Bola Orogun</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="{% static 'homepage/images/rawpixel2.jpg' %}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Mr. Segun Orimoloye</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="{% static 'homepage/images/rawpixel3.jpg' %}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Mr. Taiwo Omomule</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid pt-5 mt-5 mb-5 pb-5 backgbcolor">
+            <div class="container">
+            <h2 class="p-4 text-center text-white-50">How Meetme Works</h2>
+            <div class="row text-center">
+                <div class="col-md-6"> 
+                    <div class="d-inline-flex">
+                        <div class="pl-2 ml-5 pt-5"><i class="fas fa-search"></i></div>
+                        <div class="lead pl-2 mr-5 pt-5 text-white"> Discover the available free time on the Calendar.</div>
+                    </div>
+                </div>
+                <div class="col-md-6"> 
+                    <div class="d-inline-flex">
+                        <div class="pl-2 ml-5 pt-5"> <i class="fas fa-plus"></i></div>
+                        <div class="lead pl-3 mr-5 pt-5 text-white"> Schedule a meeting from the available free time.</div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid pt-1">
+        <div class="row text-center ml-5 mr-5">
+            <div class="col-md-6 mb-5"> 
+                <img src="{% static 'homepage/images/splash.jpg' %}" alt="meetme" class="img-fluid">
+            </div>
+            <div class="col-6 p-5 mt-5"> 
+                <h2>How to discover available free time on the calender</h3>
+                <p class="lead p-5 mt-3 mr-5">There are various challenges faced when transmitting message in wireless network, these includes:
+                    multimedia and real-time video transmission,
+                    seamless communication over heterogeneous wireless networks, 
+                    energy optimization/harvesting in wireless devices and integration of cognitive radio into wireless networks. </p>
+            </div>
+        </div>
+
+         <div class="row text-center ml-5 mr-5">
+             <div class="col-6 p-5 mt-5"> 
+                 <h2>How to schedule meeting time from the available free time</h3>
+                <p class="lead p-5 mb-5 mr-5">There are various challenges faced when transmitting message in wireless network, these includes:
+                    multimedia and real-time video transmission,
+                    seamless communication over heterogeneous wireless networks, 
+                    energy optimization/harvesting in wireless devices and integration of cognitive radio into wireless networks. </p>
+            </div>
+            <div class="col-md-6 mb-5 pr-5 pl-5"> 
+                <img src="{% static 'homepage/images/splash2.jpg' %}" alt="meetme" class="img-fluid">
+            </div>
+        </div>
+    
+    </section>
+
+    <section>
+        <div class="container-fluid pt-5 pb-5 pl-5 backgbcolor">
+            <div class="container pt-5 pb-5 pl-5">
+                <div class="row pt-5 pb-5">
+                    <div class="col-md-4">
+                        <h3 class="pt-3 pb-5 text-white-50">Your Account</h3>
+                        <a href="#" class="footer-text" > <p class="lead">Sign Up</p></a>
+                        <a href="#" class="footer-text"> <p class="lead">Log in</p></a>
+                    </div>
+                    <div class="col-md-4  pl-3 pr-3">
+                        <h3 class="pt-3 pb-5 text-white-50">Discover</h3>
+                        <a href="#" class="footer-text"> <p class="lead">Available time</p></a>
+                        <a href="#" class="footer-text"> <p class="lead">Schedule time</p></a>
+                    </div>
+                    <div class="col-md-4  pl-3 pr-3">
+                        <h3 class="pt-3 pb-5 text-white-50">Follow me</h3>
+                        <div class="row pb-5 pt-3">
+                            <div class="col-4"><a href="https://www.linkedin.com/in/ridwan-oladipupo-b7b292139"> <i class="fab fa-linkedin-in icon"></i></a></div>
+                            <div class="col-4"><a href="https://github.com/techcodify"><i class="fab fa-github"></i></a></div>
+                            <div class="col-4"><a href="https://twitter.com/OLADIPUPORIDW18"><i class="fab fa-twitter"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+            <p class="text-center text-white-50 pr-5">Handcrafted by me <i class="far fa-copyright"></i> 2019.</p>
+        </div>
+    </section>
     
 
     <!-- Optional JavaScript -->

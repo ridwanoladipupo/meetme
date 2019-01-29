@@ -1,0 +1,28 @@
+.backgbcolor{
+    background-color: #27343b;
+}
+
+.fas{
+    color: #00a2c7!important;
+    font-size: 50px;
+}
+
+a>.footer-text{
+    color: white
+}
+.footer-text{
+    color: whitesmoke;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(189, 187, 187);
+    font-weight: bold;
+}
+.fab{
+    font-size: 32px;
+    color: whitesmoke;
+}
+.fab:hover{
+    color: rgb(189, 187, 187);
+}
