@@ -1,0 +1,36 @@
+.form-group{
+margin-bottom: 6px!important;
+}
+.form-control{
+    background-color: #fafafa!important;
+    border: 1px solid #efefef!important;
+    font-size: 12px!important;
+}
+.btn{
+    margin: 12px auto;
+    padding: 6px!important;
+    font-weight: 600!important;
+}
+.btn-primary{
+    background-color: #3897f0!important;
+    border: 1px solid #3897f0!important;
+}  
+
+.terms{
+    line-height: 18px;
+    font-size: 14px;
+    color: #999;
+    margin: 5px 20px;
+}
+.right-column-login{
+    background: #fff;
+    border: 1px solid #efefef!important;
+    width: 350px;
+    margin: 10px;
+    padding: 11px;
+}
+.right-column-login a:hover{
+    text-decoration: none;
+}
+
+ 

@@ -12,6 +12,7 @@ a>.footer-text{
 }
 .footer-text{
     color: whitesmoke;
+    font-size: 23px;
 }
 
 a:hover{
@@ -25,4 +26,17 @@ a:hover{
 }
 .fab:hover{
     color: rgb(189, 187, 187);
+}
+.head-text{
+    font-size: 2.2em;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 48px;
+    opacity: 2px;
+}
+
+.text{
+    font-size: 55px;
+    font-weight: bold;
 }

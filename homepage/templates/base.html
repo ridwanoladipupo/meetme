@@ -7,6 +7,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+     <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Courgette|Fira+Sans+Condensed|PT+Sans+Caption|Raleway|Satisfy" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -14,49 +20,42 @@
     <link rel="stylesheet" type="text/css" href="{% static 'homepage/css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'homepage/css/main.css' %}">
 
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
    
+
     <title>Meetme | Techcodify</title>
     <link rel="icon" type="image/ico" href="{% static 'homepage/images/meetme.png' %}" type="text/css">
   </head>
-  <body>
+<body>
 
     <nav class="navbar navbar-inverse">
-        <a href="#" class="navbar-brand"><img src="{% static 'homepage/images/meetme.jpg' %}" alt="meetme"></a>
+        <a href="/" class="navbar-brand"><img src="{% static 'homepage/images/meetme.jpg' %}" alt="meetme"></a>
         <span class="navbar-text  my-3">
-         <a href="#" class="p-3 text-secondary">Log in</a>
-         <a href="#" class="text-secondary">Sign up</a>
+         <a href="{% url 'login:login' %}" class="p-3 text-secondary">Log in</a>
+         <a href="{% url 'signup:signup' %}" class="text-secondary">Sign up</a>
         </span>
     </nav>
 
     <section>
-        <div class="container-fluid cont-fluid no-padding">
-            <div class="row">
-                <div class="col-md-12">
-                    <img class="img-fluid w-100" src="{% static 'homepage/images/rawpixel5.jpg' %}">
-                </div>
-            </div>
+        <div class="jumbotron-fluid cont-fluid">
+            <img class="img-fluid w-100" src="{% static 'homepage/images/rawpixel5.jpg' %}">
             
             <div class="centered">
-                <h1 class="text pb-5">Schedule a meeting with me today</h1>
-                <button type="button" class="btn btn-success btn-lg btn-block">Sign Up</button>
+                <h1 class="text pb-5">Would you love to talk with me today?</h1>
+                <button type="button" class="btn btn-success btn-lg pl-5 pr-5 pt-3 pb-3 btn-xlg"><a href="{% url 'signup:signup' %}" class="text-white">Click to view my Calendar</a></button>
             </div>
 
         </div>
     </section>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid cont-fluid2 p-5">
         <div class="container text-center">
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to.</p>
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            
+            <h3 class="head-text text-black-50"> Simple, Flexible & Time-saving </h3>  
         </div>
     </div>
 
     <section>
         <div class="container">
-            <h4 class="pt-5 pb-5 mt-5">Meet my mentees</h4>
+            <h2 class="pt-5 pb-5 mt-5">Meet my mentees</h2>
 
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -145,7 +144,7 @@
 
     <section>
         <div class="container mt-5 pb-5">
-            <h4 class="pt-5 pb-5 mt-5">Meet the Giants on whom I rely</h4>
+            <h2 class="pt-5 pb-5 mt-5">Meet the great mentors I have got</h2>
 
             <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner ">
@@ -155,7 +154,7 @@
                                 <div class="card">
                                     <img src="{% static 'homepage/images/rawpixel.jpg' %}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Dr. Olusola Ajayi</h5>
+                                    <h5 class="card-title">Dr. Muslim Ameen</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
@@ -165,7 +164,7 @@
                                 <div class="card">
                                     <img src="{% static 'homepage/images/rawpixel2.jpg' %}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Mr. Olakunle Figboyegun</h5>
+                                    <h5 class="card-title">Dr. Olusola Ajayi</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
@@ -175,7 +174,7 @@
                                 <div class="card">
                                     <img src="{% static 'homepage/images/rawpixel3.jpg' %}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Engr. Ahmed Atere</h5>
+                                    <h5 class="card-title">Mr. Olakunle Figboyegun</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
@@ -189,7 +188,7 @@
                                 <div class="card">
                                     <img src="{% static 'homepage/images/rawpixel.jpg' %}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Mr. Bola Orogun</h5>
+                                    <h5 class="card-title">Engr. Ahmed Atere</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
@@ -199,7 +198,7 @@
                                 <div class="card">
                                     <img src="{% static 'homepage/images/rawpixel2.jpg' %}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Mr. Segun Orimoloye</h5>
+                                    <h5 class="card-title">Mr. Bola Orogun</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
@@ -209,7 +208,7 @@
                                 <div class="card">
                                     <img src="{% static 'homepage/images/rawpixel3.jpg' %}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Mr. Taiwo Omomule</h5>
+                                    <h5 class="card-title">Mr. Segun Orimoloye</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
@@ -235,18 +234,18 @@
     <section>
         <div class="container-fluid pt-5 mt-5 mb-5 pb-5 backgbcolor">
             <div class="container">
-            <h2 class="p-4 text-center text-white-50">How Meetme Works</h2>
+            <h2 class="p-3 text-center text-white-50 text-discovery0">How Meetme Works</h2>
             <div class="row text-center">
                 <div class="col-md-6"> 
                     <div class="d-inline-flex">
                         <div class="pl-2 ml-5 pt-5"><i class="fas fa-search"></i></div>
-                        <div class="lead pl-2 mr-5 pt-5 text-white"> Discover the available free time on the Calendar.</div>
+                        <div class="pl-2 mr-5 pt-5 text-white text-discovery2"> Discover the available free time on the Calendar.</div>
                     </div>
                 </div>
                 <div class="col-md-6"> 
                     <div class="d-inline-flex">
                         <div class="pl-2 ml-5 pt-5"> <i class="fas fa-plus"></i></div>
-                        <div class="lead pl-3 mr-5 pt-5 text-white"> Schedule a meeting from the available free time.</div>
+                        <div class="pl-3 mr-5 pt-5 text-white text-discovery2"> Schedule a meeting from the available free time.</div>
                     </div>
                 </div>
             </div>
@@ -257,27 +256,24 @@
 
     <section class="container-fluid pt-1">
         <div class="row text-center ml-5 mr-5">
-            <div class="col-md-6 mb-5"> 
+            <div class="col-md-6 mb-5 mb-5"> 
                 <img src="{% static 'homepage/images/splash.jpg' %}" alt="meetme" class="img-fluid">
             </div>
             <div class="col-6 p-5 mt-5"> 
-                <h2>How to discover available free time on the calender</h3>
-                <p class="lead p-5 mt-3 mr-5">There are various challenges faced when transmitting message in wireless network, these includes:
-                    multimedia and real-time video transmission,
-                    seamless communication over heterogeneous wireless networks, 
-                    energy optimization/harvesting in wireless devices and integration of cognitive radio into wireless networks. </p>
+                <h2 class="mt-1 pb-4 mr-3 pt-5">How to discover available free time on the calender</h2>
+                <p class=" pb-5 mt-3 mr-5 ml-4 text-discovery">There are various challenges faced when transmitting message in wireless network, these includes:
+                    multimedia and real-time video transmission, </p>
             </div>
         </div>
 
-         <div class="row text-center ml-5 mr-5">
-             <div class="col-6 p-5 mt-5"> 
-                 <h2>How to schedule meeting time from the available free time</h3>
-                <p class="lead p-5 mb-5 mr-5">There are various challenges faced when transmitting message in wireless network, these includes:
+         <div class="row text-center p-5 ml-5 mr-5">
+             <div class="col-sm-6 pb-5 mt-5"> 
+                <h2 class="mt-1 pb-4 pl-5 mr-3">How to schedule meeting time from the available free time</h3>
+                <p class="lead pb-5 pl-5 mb-5 mt-1 mr-5 text-discovery">There are various challenges faced when transmitting message in wireless network, these includes:
                     multimedia and real-time video transmission,
-                    seamless communication over heterogeneous wireless networks, 
-                    energy optimization/harvesting in wireless devices and integration of cognitive radio into wireless networks. </p>
+                </p>
             </div>
-            <div class="col-md-6 mb-5 pr-5 pl-5"> 
+            <div class="col-sm-6 mb-5 pr-5 pl-5"> 
                 <img src="{% static 'homepage/images/splash2.jpg' %}" alt="meetme" class="img-fluid">
             </div>
         </div>
@@ -290,8 +286,8 @@
                 <div class="row pt-5 pb-5">
                     <div class="col-md-4">
                         <h3 class="pt-3 pb-5 text-white-50">Your Account</h3>
-                        <a href="#" class="footer-text" > <p class="lead">Sign Up</p></a>
-                        <a href="#" class="footer-text"> <p class="lead">Log in</p></a>
+                        <a href="{% url 'signup:signup' %}" class="footer-text" > <p class="lead">Sign up</p></a>
+                        <a href="{% url 'login:login' %}" class="footer-text"> <p class="lead">Log in</p></a>
                     </div>
                     <div class="col-md-4  pl-3 pr-3">
                         <h3 class="pt-3 pb-5 text-white-50">Discover</h3>

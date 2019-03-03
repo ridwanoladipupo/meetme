@@ -1,0 +1,80 @@
+*{
+margin: 0;
+padding: 0;
+}
+body {
+/* Location of the image */
+/* Image is centered vertically and horizontally at all times */
+background-position: center center;
+
+/* Image doesn't repeat */
+background-repeat: no-repeat;
+
+/* Makes the image fixed in the viewport so that it doesn't move when 
+the content height is greater than the image height */
+background-attachment: fixed;
+
+/* This is what makes the background image rescale based on its container's size */
+background-size: cover;
+
+/* Pick a solid background color that will be displayed while the background image is loading */
+background-color:#27343b!important;
+
+/* SHORTHAND CSS NOTATION
+* background: url(background-photo.jpg) center center cover no-repeat fixed;
+*/
+}
+.navbar-brand img{
+max-height: 30px;
+}
+
+.container{
+margin-top: -35px;
+}
+
+.right-column{
+background: #fff;
+border: 1px solid #e6e6e6;
+width: 600px;
+margin: 50px 10px 10px 0px;
+padding: 50px
+}
+.meetme-logo{
+margin: 25px auto;
+width: 134px;  
+}
+.info{
+font-weight: 600px;
+line-height: 20px;
+font-size: 20px;
+color: #999;
+padding-bottom: 5px;
+}
+button img{
+height: 25px !important;
+padding: 0 8px 2px;
+}
+.or{
+font-size: 16px !important;
+color: #999;
+font-weight: 600;
+}
+.or::before{
+content: '';
+background-color: #efefef;
+display: block;
+height: 3px;
+width: 220px;
+position: relative;
+top: 14px;
+}
+.or::after{
+content: '';
+background-color: #efefef;
+display: block;
+height: 3px;
+width: 220px;
+position: relative;
+bottom: 12px;
+left: 278px;
+}
